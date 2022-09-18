@@ -1,0 +1,56 @@
+.App {
+  background-color: var(--Light-Grayish-Cyan-bg);
+  font-family: var(--league-spartan);
+}
+.App .header {
+  background-color: var(--Desaturated-Dark-Cyan);
+  position: relative;
+}
+
+.App .jobs {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.App .filter {
+  box-shadow: -1px 6px 23px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 78%;
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.App .filter > div {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.App .filter > div > span {
+  background-color: var(--Light-Grayish-Cyan-bg);
+  color: var(--Desaturated-Dark-Cyan);
+  font-size: 17px;
+  font-weight: 500;
+  padding: 5px 8px;
+}
+
+@media (min-width: 830px) {
+  .App .container {
+    max-width: 830px;
+    margin: 0 auto;
+  }
+
+  .App .header .filter {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  
+}
